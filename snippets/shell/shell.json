@@ -11,12 +11,12 @@
     },
     "if": {
         "prefix": "if",
-        "body": "if [[ ${1:condition} ]]; then\n\t${0}\nfi",
+        "body": "if [ ${1:condition} ]; then\n\t${0}\nfi",
         "description": "An IF statement."
     },
     "elseif": {
         "prefix": "elseif",
-        "body": "elif [[ ${1:condition} ]]; then\n\t${0}",
+        "body": "elif [ ${1:condition} ]; then\n\t${0}",
         "description": "Add an elseif to an if statement."
     },
     "else": {
@@ -36,12 +36,12 @@
     },
     "while": {
         "prefix": "while",
-        "body": "while [[ ${1:condition} ]]; do\n\t${0}\ndone\n",
+        "body": "while [ ${1:condition} ]; do\n\t${0}\ndone\n",
         "description": "A while loop by condition."
     },
     "until": {
         "prefix": "until",
-        "body": "until [[ ${1:condition} ]]; do\n\t${0}\ndone\n",
+        "body": "until [ ${1:condition} ]; do\n\t${0}\ndone\n",
         "description": "until loop by condition"
     },
     "function": {
